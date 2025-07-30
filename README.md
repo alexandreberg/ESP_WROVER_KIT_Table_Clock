@@ -5,6 +5,8 @@ Create a table clock with ESP_WROVER_KIT
 You need to create a credential file with the WiFi parameters:
 Create de *credentials.h* inside de src folder:
 ```
+#include <Arduino.h> //Include Arduino Headers
+
 // Replace with your network credentials
 const char* ssid     = "YOUR_WIFI_SSID";
 const char* wifipw   = "YOUR_WIFI_PASSWORD";
