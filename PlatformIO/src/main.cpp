@@ -12,10 +12,14 @@ OK - 07.01.2024 implementation of display of date, now it shows in order and it 
   7/Jan
   Sun
 
-TODO
+  - 08 nov 2025: adjusting wifi credentials
+  Code in GitHub: https://github.com/alexandreberg/ESP_WROVER_KIT_Table_Clock
+TODO:
 NOK - 21/01/2024 - Config o Timer de ovos para 7 minutos
   Dados: GND <- (SW RED -Timer) -> IO27 (como input pullup)
   GND <- (Buzzer 5V) -> IO26 (Output)
+
+
 */
 //************************************************************************************************
 //Library Definitions:
@@ -196,6 +200,7 @@ void readButton();      //check if egg timer push button was pressed
 
 void setup(){
   Serial.begin(115200);
+  Serial.println("ESP_WROVER_KIT_Table_Clock Version: 2025110801");
   //Serial.setDebugOutput(true);
 
   //Egg Timer
